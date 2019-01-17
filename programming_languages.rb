@@ -6,12 +6,19 @@ def reformat_languages(languages)
     lang.each do |name, type|
       new_hash[name] = type
     end
-    new_hash.each do |key, value|
-      key[:style] = []
-    end
+    new_hash[:ruby][:style] = []
+    new_hash[:javascript][:style] = lang_keys
+    new_hash[:ruby][:style] = []
+    new_hash[:ruby][:style] = []
+    new_hash[:ruby][:style] = []
+    new_hash[:ruby][:style] = []
+    new_hash[:ruby][:style] = []
     new_hash[:ruby][:style].push(lang_keys[0])
     new_hash[:python][:style].push(lang_keys[0])
     new_hash[:java][:style].push(lang_keys[0])
-  end
+    new_hash[:clojure][:style].push(lang_keys[1])
+    new_hash[:erlang][:style].push(lang_keys[1])
+    new_hash[:scala][:style].push(lang_keys[1])
+    
   new_hash
 end
