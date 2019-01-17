@@ -9,11 +9,11 @@ def reformat_languages(languages)
   end
     new_hash[:ruby][:style] = []
     new_hash[:javascript][:style] = lang_keys
-    new_hash[:ruby][:style] = []
-    new_hash[:ruby][:style] = []
-    new_hash[:ruby][:style] = []
-    new_hash[:ruby][:style] = []
-    new_hash[:ruby][:style] = []
+    new_hash[:python][:style] = []
+    new_hash[:java][:style] = []
+    new_hash[:clojure][:style] = []
+    new_hash[:erlang][:style] = []
+    new_hash[:scala][:style] = []
     new_hash[:ruby][:style].push(lang_keys[0])
     new_hash[:python][:style].push(lang_keys[0])
     new_hash[:java][:style].push(lang_keys[0])
