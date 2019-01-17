@@ -6,6 +6,7 @@ def reformat_languages(languages)
     lang.each do |name, type|
       new_hash[name] = type
     end
+  end
     new_hash[:ruby][:style] = []
     new_hash[:javascript][:style] = lang_keys
     new_hash[:ruby][:style] = []
